@@ -15,14 +15,22 @@ int main(void)
     int p1Score = 0;
     int p2Score = 0;
 
+    string word1 = get_string("Player 1 word: ");
+    string word2 = get_string("Player 2 word: ");
+
+    printf("%s\n", word1);
+    printf("%s\n", word2);
+
+    // calculate scores
+    p1Score = computePlayerScore(word1);
+    p2Score = computePlayerScore(word2);
+
 }
 
-string getPlayerWord(){
-    // TODO get player word
-}
 
 int computePlayerScore(int n){
     // TODO computer player score
+    return 0;
 }
 
 void computeWinner(int p1, int p2){
